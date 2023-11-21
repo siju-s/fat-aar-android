@@ -4,12 +4,12 @@ apply plugin: 'signing'
 
 task sourcesJar(type: Jar) {
     from sourceSets.main.allJava
-    classifier = 'sources'
+    archiveClassifier = 'sources'
 }
 
 task javadocJar(type: Jar) {
     from javadoc
-    classifier = 'javadoc'
+    archiveClassifier = 'javadoc'
 }
 
 
@@ -43,7 +43,7 @@ publishing {
                 name = PUBLISH_ARTIFACT_ID
                 description = 'A gradle plugin that merge dependencies into the final aar file works with AGP 3.+'
                 // If your project has a dedicated site, use its URL here
-                url = 'https://github.com/kezong/fat-aar-android'
+                url = 'https://github.com/siju-s/fat-aar-android'
                 licenses {
                     license {
                         name = 'The MIT License'
@@ -52,16 +52,16 @@ publishing {
                 }
                 developers {
                     developer {
-                        id = 'kezong'
-                        name = 'kezong'
-                        email = 'kezong1811@gmail.com'
+                        id = 'siju'
+                        name = 'siju'
+                        email = 'sjdeveloperworks@gmail.com'
                     }
                 }
                 // Version control info, if you're using GitHub, follow the format as seen here
                 scm {
-                    connection = 'scm:git:github.com/kezong/fat-aar-android.git'
-                    developerConnection = 'scm:git:ssh://github.com/kezong/fat-aar-android.git'
-                    url = 'https://github.com/kezong/fat-aar-android/tree/master'
+                    connection = 'scm:git:github.com/siju-s/fat-aar-android.git'
+                    developerConnection = 'scm:git:ssh://github.com/siju-s/fat-aar-android.git'
+                    url = 'https://github.com/siju-s/fat-aar-android/tree/master'
                 }
                 // A slightly hacky fix so that your POM will include any transitive dependencies
                 // that your library builds upon
