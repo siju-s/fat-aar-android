@@ -3,7 +3,13 @@
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kezong/fat-aar-android/blob/master/LICENSE)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.kezong/fat-aar/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.kezong/fat-aar)
 
-### This fork adds support for AGP 8.0.
+### This fork adds support for AGP 8.1.
+
+
+### To debug
+1. Create a remote configuration
+2. Run `./gradlew tasks -Dorg.gradle.debug=true --no-daemon` , setup breakpoint and then click on
+   Debug button in Android Studio
 
 The solution of merging aar works with [AGP][3] `3.0` and higher. (Tested in AGP 3.0 - 8.0.0, and Gradle 4.9 - 8.0)
 ## Getting Started

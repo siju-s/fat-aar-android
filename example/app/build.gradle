@@ -1,9 +1,11 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
+    namespace "com.fataar.demo"
+
+
+    compileSdkVersion 33
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -13,7 +15,7 @@ android {
     defaultConfig {
         applicationId "com.fataar.demo"
         minSdkVersion 19
-        targetSdkVersion 29
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
